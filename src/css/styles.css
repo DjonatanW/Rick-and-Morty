@@ -1,0 +1,11 @@
+.bg-image {
+  background-image: url(../images/FUNDO.jpg);
+  background-size: cover;       /* Ajusta a imagem para cobrir o elemento */
+  background-position: center;  /* Centraliza a imagem */
+  height: 100vh;               /* Altura da tela inteira */
+  width: 100%;                 /* Largura completa */
+}
+
+.navbar {
+  
+}
