@@ -1,12 +1,35 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Remove a barra de rolagem */
+}
+
 
 .bg-image {
-  background-image: url(../../assets/images/FUNDO_2.jpg);
-  background-size: cover;       
-  background-position: center;  
-  height: 100vh;               
+  background-image: url(../assets/images/FUNDO_2.jpg);
+  background-size: cover; /* Preenche a tela */
+  background-position: center; /* Centraliza a imagem */
+  height: 100vh; /* Preenche a altura da viewport */
+  width: 100vw; /* Preenche a largura da viewport */
+  overflow: hidden;
+  z-index: 0;
 }
+
+header {
+  position: absolute; /* Garante que o header fique sobre o fundo */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa a largura total da tela */
+  z-index: 1; /* Eleva o header acima do fundo */
+}
+
 
 #h1-title {
   color: #0F5717;
   
+}
+
+#logo {
+  width: 30px;
 }
