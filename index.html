@@ -11,39 +11,100 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="vh-100">
-  <div class="bg-image">
+<body>
     <header>
-      <div class="container bg-white m-1">
-        <div class="row">
-          <div class=" flex-column p-1">
-              <img id="logo" src="./src/assets/logo/RICK_MORTY_ICON-01.svg" alt="logo">
+      <div class="container cabecalho">
+        <div class="row justify-content-center">
+          <div class="col-9 col-sm-8 flex-column">
+            <div class="mb-3">
+              <img class="position-absolute top-0 start-0  logo" id="logo" src="./src/assets/logo/RICK_MORTY_ICON-01.svg" alt="logo Rick and Morty">
+            </div>
+            <div class="p-2 mt-5 text-center"> 
+                <h1 id="h1-title" class="tracking-in-expand-fwd-top display-5 titulo"><b>API de Rick and Morty</b></h1>
+            </div>
+            <div class="input-group">
+              <label for="exampleFormControlInput1" class= "form-label"></label>
+              <input type="text" class="form-control" placeholder="Pesquise">
+              <button class="btn btn-light">
+                <i class="bi bi-search"></i>
+              </button>
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </header>
+
+    <main class="background">
+      <div class="container">
+        <div class="row container_card" id="cards-personagens">
+        
+        </div>
+        <div class="row mt-5 mb-0">
+          <div class="col d-flex justify-content-center">
+            <div id="botoes-pagina">
+
+            </div>
           </div>
-          <div class="p-4 text-center bg-white"> 
-              <h1 id="h1-title" class="fw-bold">API de Rick and Morty</h1>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Pesquise">
-                <button class="btn btn-light">
-                  <i class="bi bi-search"></i>
-                </button>
+        </div>
+      </div>
+      <div>
+        <img class="h-100 w-100" src="./src/assets/images/FUNDO_2.jpg" alt="Imagem do fundo">
+      </div>
+    </main>
+
+    <footer class="container-fluid text-center fs-4" id="footer-index">
+      <div class="row h-100">
+        <div class="col-12 col-md-4 align-self-end">
+          <p class="cor1">PERSONAGENS: <span id="personagens"></span></p>
+        </div>
+        <div class="col-12 col-md-4 align-self-end">
+          <p class="cor1">LOCALIZAÇÕES: <span id="localizacoes"></span></p>
+        </div>
+        <div class="col-12 col-md-4 align-self-end">
+          <p class="cor1">EPISÓDIOS: <span id="episodios"></span></p>
+        </div>
+        <div class="col-12 col-md-12 align-self-end">
+          <div class="row">
+              <div class="col-12 col-md-6 text-md-end">
+                  <p class="cor1">Desenvolvido por:</p>
+              </div>
+              <div class="col-12 col-md-6 text-md-start">
+                  <span class="text-light"> Djonatan Weber </span>
               </div>
           </div>
         </div>
       </div>
-      
+    </footer>
 
-    </header>
-
-    <main>
-      <div class="container-fluid bg-image">
-        
-      </div>
-    </main>
-  </div>
+    <!-- Modal -->
+    <div class="modal fade roll-in-left" id="modal_detalhes" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Detalhes</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                    <div class="card mb-3" id="detalhes" style="max-width: 540px;">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-padrao" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./src/js/api.js"></script>
+  
+  <script src="./src/js/scripts.js"></script>
+  
 </body>
 
 </html>
