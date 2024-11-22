@@ -294,7 +294,7 @@ function modalPersonagem(personagem) {
 
 //mostra o total de pesonagens utilizado no footer
 function mostraTotalPersonagens(quantidade) {
-    const totalPersonagens = document.getElementById("personagen")
+    const totalPersonagens = document.getElementById("personagens")
     totalPersonagens.className = 'text-light'
     totalPersonagens.innerHTML = ` ${quantidade} `;
 
