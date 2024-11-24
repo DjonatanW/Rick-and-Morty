@@ -15,7 +15,7 @@
 .color_status_vivo {
   margin-top: 7px;
   position: absolute;
-  border-radius: 999999px;
+  border-radius: 99999px;
   background-color: #62EC52;
   border: 1px solid #62EC52;
   width: 10px;
@@ -25,7 +25,7 @@
 .color_status_desconhecido {
   margin-top: 6px;
   position: absolute;
-  border-radius: 999999px;
+  border-radius: 99999px;
   background-color: gray;
   border: 1px solid gray;
   width: 10px;
@@ -35,7 +35,7 @@
 .color_status_morto {
   margin-top: 6px;
   position: absolute;
-  border-radius: 999999px;
+  border-radius: 99999px;
   background-color: red;
   border: 1px solid red;
   width: 10px;
