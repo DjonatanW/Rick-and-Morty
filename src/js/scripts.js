@@ -10,7 +10,7 @@ let result = []
 
 const cartoesPersonagensEL = document.getElementById("cards-personagens")
 const containerPersonagens = document.getElementById("personagens")
-const containerbotoes = document.getElementById("botoes_pagina")
+const containerbotoes = document.getElementById("botoes-pagina")
 
 //rota onde são carregadas as informações dos personagens
 async function carregarPersonagens() {
@@ -105,7 +105,7 @@ function criaElementosPaginacao(quantidadeDePaginas) {
 
     // Cria a lista de páginas
     const ulElemento = document.createElement("ul");
-    ulElemento.className = "botao_paginacao";
+    ulElemento.className = "botao-paginacao";
 
     // Cria o botão "Anterior"
     const liElementoAnterior = document.createElement("li");
@@ -218,10 +218,10 @@ function criarElementoCartao(personagem) {
 
 
     const cardElement = document.createElement('div');
-    cardElement.className = `tamanho_card puff-in-center bg-secondary text-white card my-2 mx-2 ${obterSombraStatusCard(personagem.status)}`;
+    cardElement.className = `tamanho-card puff-in-center bg-secondary text-white card my-2 mx-2 ${obterSombraStatusCard(personagem.status)}`;
     const imageElement = document.createElement('img');
     imageElement.src = personagem.image;
-    imageElement.className = 'card-img-top imagem_personagem';
+    imageElement.className = 'card-img-top imagem-personagem';
     imageElement.alt = 'Imagem do personagem';
 
     const cardBodyElement = document.createElement('div');
@@ -243,9 +243,9 @@ function criarElementoCartao(personagem) {
     buttonElement.type = 'button';
     buttonElement.addEventListener('click', () => { modalPersonagem(personagem) });
     buttonElement.id = 'botao-detalhes';
-    buttonElement.className = 'btn btn-padrao pulsate-fwd';
+    buttonElement.className = 'btn btn-padrao pulsate-fwd active';
     buttonElement.setAttribute('data-bs-toggle', 'modal');
-    buttonElement.setAttribute('data-bs-target', '#modal_detalhes');
+    buttonElement.setAttribute('data-bs-target', '#modal-detalhes');
     buttonElement.style = '--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;';
     buttonElement.textContent = 'Mais detalhes';
 
